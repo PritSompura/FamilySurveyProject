@@ -1,0 +1,79 @@
+:root {
+  --brand-color: #8a2c1d;
+  --brand-color-dark: #6e2216;
+}
+
+body {
+  background-color: #f6f4f0;
+}
+
+.bg-brand {
+  background-color: var(--brand-color) !important;
+}
+
+.btn-brand {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+  color: #fff;
+}
+
+.btn-brand:hover {
+  background-color: var(--brand-color-dark);
+  border-color: var(--brand-color-dark);
+  color: #fff;
+}
+
+.text-brand {
+  color: var(--brand-color);
+}
+
+.member-card {
+  border-left: 4px solid var(--brand-color);
+}
+
+.navbar-brand {
+  font-size: 1.1rem;
+}
+
+.table-responsive {
+  max-height: 70vh;
+}
+
+/* Mobile responsiveness tweaks */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 0.95rem;
+  }
+  .card-body {
+    padding: 0.9rem;
+  }
+  h4 {
+    font-size: 1.15rem;
+  }
+  .table-responsive {
+    max-height: none;
+  }
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+/* Letterhead - mimics the printed Sompura Kendriya Parishad Samiti form */
+.letterhead-title {
+  font-size: 1.8rem;
+}
+
+.note-row {
+  background-color: #fdf6f0;
+  border: 1px solid #eadfd4;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+}
+
+@media (max-width: 576px) {
+  .letterhead-title {
+    font-size: 1.2rem;
+  }
+}
